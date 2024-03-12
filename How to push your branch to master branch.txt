@@ -12,8 +12,12 @@ git checkout master #change branch
 git status #comfirm the branch
 git pull #update branch data
 
-git pull <git ssh> <your branch name> 
+git pull <git ssh> <your branch name> #ctrl X to exit
 
 git add *
 git commit -m "your remark"
 git push
+
+git checkout <your branch name> #change branch
+git pull #update branch data
+git status #comfirm the branch
