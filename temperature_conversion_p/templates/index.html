@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Conversion</title>
+</head>
+<body>
+ 
+    <h1>Temperature Conversion</h1>
+    <form action="/" method="post">
+        <p>Enter the temperature in fahrenheit to convert to celsius:</p>
+    <input type="number" name="temp">
+    <input type="submit" value="Convert">
+    </form>
+    <p>
+      Your temperature of {{ temp }} in F converts to {{ converted_t }} in C
+    </p>
+</body>
+</html>
