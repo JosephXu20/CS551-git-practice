@@ -1,6 +1,6 @@
 git checkout <your branch name> #change branch
-git pull #update branch data
 git status #comfirm the branch
+git pull #update branch data
 
 #creat file and write code
 
@@ -19,5 +19,5 @@ git commit -m "your remark"
 git push
 
 git checkout <your branch name> #change branch
-git pull #update branch data
 git status #comfirm the branch
+git pull #update branch data
