@@ -1,0 +1,3 @@
+[submodule "temperature_conversion_p"]
+	path = temperature_conversion_p
+	url = git@github.com:scharlau/temperature_conversion_p.git
