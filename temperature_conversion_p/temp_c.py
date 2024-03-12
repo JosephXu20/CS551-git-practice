@@ -10,3 +10,12 @@ def index():
         temp = int(request.form["temp"])
         converted_t = (temp-32)*0.5556
     return render_template("index.html", converted_t=converted_t, temp=temp)
+
+
+
+
+
+
+
+
+# i have made a change
