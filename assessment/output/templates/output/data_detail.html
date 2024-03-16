@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Detail</title>
+</head>
+<body>
+    <h1>Detail in country</h1>
+    {% for data in metadata %}
+        <p>
+            <b>Country Name</b>: {% if data.tableName %} {{ data.tableName }} {% else %} N/A {% endif %}<br>
+            <b>Region</b>: {% if data.region %} {{ data.region }} {% else %} N/A {% endif %}<br>
+            <b>Income Group</b>: {% if data.incomeGroup %} {{ data.incomeGroup }} {% else %} N/A {% endif %}<br>
+            <b>Special Notes</b>: {% if data.specialNotes %} {{ data.specialNotes }} {% else %} N/A {% endif %}<br>
+        </p>
+    {% endfor %}
+</body>
+</html>

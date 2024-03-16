@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Renewable Electricity Output</title>
+</head>
+<body>
+    <h1>% of Total Electricity Output in different year</h1>
+    {% if data %}
+        {% for data_item in data %}
+            <p>
+                <b>{{ data_item.id }}</b> .
+                <b><a href="{% url 'data_detail' tableName=data_item.countryName %}">{{ data_item.countryName }}</a></b> |
+                <b>1990</b>: {{ data_item.year1 }} |
+                <b>1995</b>: {{ data_item.year2 }} |
+                <b>2000</b>: {{ data_item.year3 }} |
+                <b>2005</b>: {{ data_item.year4 }} |
+                <b>2010</b>: {{ data_item.year5 }} |
+                <b>2015</b>: {{ data_item.year6 }} |
+            </p>
+        {% endfor %}
+    {% else %}
+        <p>No data available</p>
+    {% endif %}
+</body>
+</html>
